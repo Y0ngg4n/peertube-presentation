@@ -18,38 +18,42 @@ layout: cover
 <img width="30%" class="mx-auto" src="/images/fresh-news-mobile.webp"/>
 ---
 transition: slide-left
-zoom: 1.5
 layout: default-4
 ---
+<Transform scale="1.3">
+
 # Was ist Peertube?
 - Open Source Videoplattform
 - Activitypub-Föderation aka *Fediverse*
 - P2P-Übertragungen via WebRTC
-<QualleMitVideo class="absolute right-5% bottom-5%" width="20%" />
 
+</Transform>
+<QualleMitVideo class="absolute right-5% bottom-5%" width="20%" />
 <!-- 
 P2P = Peer-to-Peer
 Activitypub = Protokol mit dem z.Bsp. Mastodon und Pixelfed miteinander reden
 -->
 ---
 transition: slide-left
-zoom: 1.5
 layout: default-2
 ---
+<Transform scale="1.3">
+
 # Warum sollte ich Peertube benutzen?
 - Datenschutz
 - Fediverse
 - Freie Software unterstützen
+</Transform>
 <Qualle class="pt-20 absolute right-5% bottom-5%"/>
-
 <!--
 Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
 -->
 ---
-zoom: 0.9
-layout: default-3
+layout: center
 ---
-# Wie Funktioniert Peertube denn?
+# Wie funktioniert Peertube denn?
+<Transform scale="1" class="">
+
 ```mermaid
 graph TD
     A[PeerTube Site A] <-->|Teilt Inhalte| B[PeerTube Site B]
@@ -65,11 +69,15 @@ graph TD
     style C fill:#FF9E9D,stroke:#E74C3C,color:#333333
     style User1 fill:#FFC36B,stroke:#E67E22,color:#333333
 ```
+
+</Transform>
 ---
-layout: right
+layout: default-2
 ---
 # Wie spart Peertube Bandbreite und verhindert Überlastung?
-<div class="grid grid-cols-2 gap-4">
+<Transform scale="1.2">
+<div class="absolute grid grid-cols-2 gap-4 mr-15">
+
 ```mermaid
 flowchart LR
     subgraph "Traditionelle Videoplattformen"
@@ -86,7 +94,7 @@ flowchart LR
 ```
 ```mermaid
 flowchart LR
-    subgraph "PeerTube's Weg"
+    subgraph "PeerTube"
         PS[PeerTube Server] -->|Sendet Video| PV1[Zuschauer 1]
         PS -->|Sendet Video| PV2[Zuschauer 2]
         PV1 -->|Hilft das Video zu senden| PV2
@@ -99,10 +107,12 @@ flowchart LR
     style PV3 fill:#FEEE7D,stroke:#F39C12,color:#333333
 ```
 </div>
+</Transform>
 ---
-zoom: 0.6
 ---
-# Peertube unterstützt auch verteilte Systeme
+# Peertube unterstützt verteilte Systeme
+<Transform scale="0.95">
+
 ```mermaid
 flowchart TD
     A[PeerTube-Instanz] --> B{Benötigt Videoverarbeitung?}
@@ -135,6 +145,8 @@ flowchart TD
     style I fill:#FFC36B,stroke:#E67E22,color:#333333
     style J fill:#FFC36B,stroke:#E67E22,color:#333333
 ```
+
+</Transform>
 ---
 layout: section
 transition: slide-up
@@ -147,10 +159,12 @@ layout: iframe
 url: https://joinpeertube.org/browse-content
 ---
 --- 
-zoom: 1.3
-layout: right
+layout: default
 ---
 # Wie funktioniert die Suche?
+
+<Transform scale="1.4">
+
 ```mermaid
 flowchart TD
     A[Nutzer] -->|Sucht nach Videos| B[PeerTube-Instanz]
@@ -175,6 +189,8 @@ flowchart TD
     style G fill:#DDDDDD,stroke:#7F8C8D,color:#333333
     style H fill:#DDDDDD,stroke:#7F8C8D,color:#333333
 ```
+
+</Transform>
 ---
 transition: slide-left
 layout: section-3
