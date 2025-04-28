@@ -35,15 +35,22 @@ Activitypub = Protokol mit dem z.Bsp. Mastodon und Pixelfed miteinander reden
 -->
 ---
 transition: slide-left
-layout: default-2
+layout: default-3
 ---
-<Transform scale="1.3">
 
 # Warum sollte ich Peertube benutzen?
 - Datenschutz
 - Fediverse
 - Freie Software unterstützen
-</Transform>
+- [Plugins](https://joinpeertube.org/plugins-selection) und Themes
+- Keine Werbung
+- Kein Alghoritmus
+- Videobearbeitungsmöglichkeiten
+  - Video mit Start und Ende schneiden
+  - Intro und Outro hinzufügen
+  - Wasserzeichen/Logo einfügen
+- Livestreams
+- Externe Videos auf die eigene Instanz synchronisieren
 <Qualle class="pt-20 absolute right-5% bottom-5%"/>
 <!--
 Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
