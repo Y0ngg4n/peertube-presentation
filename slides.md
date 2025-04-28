@@ -20,13 +20,14 @@ layout: cover
 transition: slide-left
 layout: default-4
 ---
-<Transform scale="1.3">
+
+<Transform scale="1.5">
 
 # Was ist Peertube?
+
 - Open Source Videoplattform
 - Activitypub-Föderation aka *Fediverse*
 - P2P-Übertragungen via WebRTC
-
 </Transform>
 <QualleMitVideo class="absolute right-5% bottom-5%" width="20%" />
 <!-- 
@@ -38,23 +39,43 @@ transition: slide-left
 layout: default-3
 ---
 
+<Transform scale="1.4">
+
 # Warum sollte ich Peertube benutzen?
+
 - Datenschutz
 - Fediverse
 - Freie Software unterstützen
 - [Plugins](https://joinpeertube.org/plugins-selection) und Themes
 - Keine Werbung
 - Kein Alghoritmus
+
+</Transform>
+<Qualle class="pt-20 absolute right-4% bottom-12%"/>
+<!--
+Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
+-->
+---
+transition: slide-left
+layout: default-3
+---
+<Transform scale="1.4">
+
+# Warum sollte ich 
+# Peertube benutzen?
+
 - Videobearbeitungsmöglichkeiten
   - Video mit Start und Ende schneiden
   - Intro und Outro hinzufügen
   - Wasserzeichen/Logo einfügen
 - Livestreams
 - Externe Videos auf die eigene Instanz synchronisieren
-<Qualle class="pt-20 absolute right-5% bottom-5%"/>
-<!--
-Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
--->
+- Es gibt einen Download-Knopf
+
+</Transform>
+
+<Qualle class="pt-20 absolute right-4% bottom-12%"/>
+
 ---
 layout: center
 ---
@@ -78,6 +99,7 @@ graph TD
 ```
 
 </Transform>
+<QualleMitVideo class="absolute top-16.3% left-3%" width="15%" />
 ---
 layout: default-2
 ---
@@ -115,6 +137,8 @@ flowchart LR
 ```
 </div>
 </Transform>
+
+<img width="10%" class="absolute right-1% top-4.1%" src="/images/fresh-news-mobile.webp"/>
 ---
 ---
 # Peertube unterstützt verteilte Systeme
@@ -154,6 +178,8 @@ flowchart TD
 ```
 
 </Transform>
+
+<img width="15%" class="absolute bottom-3% right-3%" src="/images/QualleComputer.png">
 ---
 layout: section
 transition: slide-up
@@ -198,12 +224,15 @@ flowchart TD
 ```
 
 </Transform>
+
+
+<QualleSearch class="absolute right-5% top-5%" width="20%" />
 ---
 transition: slide-left
 layout: section-3
 ---
 # Wie benutze ich Peertube denn?
-<QualleFrage class="absolute right-5% top-5%"/>
+<QualleFrage class="absolute right-1% top-1%"/>
 <!-- Live-Demo -->
 ---
 transition: slide-up
@@ -240,10 +269,8 @@ transition: slide-up
 layout: iframe
 url: https://docs.joinpeertube.org/install/any-os
 ---
----
 layout: iframe
 url: https://docs.joinpeertube.org/install/docker
----
 ---
 layout: quote
 ---
@@ -259,7 +286,9 @@ layout: section-2
 ---
 # Habt ihr
 # noch Fragen?
-<QualleFrage class="absolute right-5% bottom-5%"/>
+<Transform :scale="1.2">
+<QualleFrage class="absolute right-10% bottom-10%"/>
+</Transform>
 ---
 layout: default-6
 ---
