@@ -57,3 +57,15 @@ url: https://joinpeertube.org/browse-content
 layout: iframe
 url: https://joinpeertube.org/instances
 ---
+---
+layout: section
+---
+# Kann ich vielleicht meine eigene Instanz installieren?
+---
+layout: iframe
+url: https://docs.joinpeertube.org/install/any-os
+---
+---
+layout: iframe
+url: https://docs.joinpeertube.org/install/docker
+---
