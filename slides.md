@@ -24,6 +24,11 @@ zoom: 1.5
 - Activitypub-Föderation aka *Fediverse*
 - P2P-Übertragungen via WebRTC
 <QualleMitVideo class="absolute right-5% bottom-5%" width="30%" />
+
+<!-- 
+P2P = Peer-to-Peer
+Activitypub = Protokol mit dem z.Bsp. Mastodon und Pixelfed miteinander reden
+-->
 ---
 zoom: 1.5
 ---
@@ -32,6 +37,10 @@ zoom: 1.5
 - Fediverse
 - Freie Software unterstützen
 <Qualle class="pt-20 absolute right-5% bottom-5%"/>
+
+<!--
+Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
+-->
 ---
 layout: section
 ---
@@ -41,6 +50,11 @@ layout: section
 layout: iframe
 url: https://joinpeertube.org/browse-content
 ---
+---
+layout: section
+---
+# Wie benutze ich Peertube denn?
+<!-- Live-Demo -->
 ---
 ---
 # Klingt cool, wo kann ich starten?
@@ -53,6 +67,9 @@ url: https://joinpeertube.org/browse-content
 - [Adminforge: clip.place](https://clip.place/)
 - [edutainment content: tilvids.com](https://tilvids.com/)
 - [Musik: v.basspistol.org](https://v.basspistol.org)
+<!-- 
+Auf der Digitalcourage-Instanz ist die Registrierung auch nicht offen und wir werden sie auch zum aktuellen Zeitpunkt nicht öffnen
+-->
 ---
 layout: iframe
 url: https://joinpeertube.org/instances
@@ -69,3 +86,4 @@ url: https://docs.joinpeertube.org/install/any-os
 layout: iframe
 url: https://docs.joinpeertube.org/install/docker
 ---
+
