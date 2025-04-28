@@ -26,6 +26,7 @@ layout: default-4
 # Was ist Peertube?
 
 - Open Source Videoplattform
+- Dezentralisiert
 - Activitypub-Föderation aka *Fediverse*
 - P2P-Übertragungen via WebRTC
 </Transform>
@@ -70,7 +71,7 @@ layout: default-3
   - Wasserzeichen/Logo einfügen
 - Livestreams
 - Externe Videos auf die eigene Instanz synchronisieren
-- Es gibt einen Download-Knopf
+- Download-Knopf
 
 </Transform>
 
@@ -80,17 +81,17 @@ layout: default-3
 layout: center
 ---
 # Wie funktioniert Peertube denn?
-<Transform scale="1" class="">
+<Transform scale="0.9" class="">
 
 ```mermaid
 graph TD
-    A[PeerTube Site A] <-->|Teilt Inhalte| B[PeerTube Site B]
-    A <-->|Teilt Inhalte| C[PeerTube Site C]
+    A[PeerTube Instanz A] <-->|Teilt Inhalte| B[PeerTube Instanz B]
+    A <-->|Teilt Inhalte| C[PeerTube Instanz C]
     B <-->|Teilt Inhalte| C
     
-    User1[Nutzer] -->|Seite beitreten| A
-    User1 -->|Kann Videos von allen Seiten anschauen| B
-    User1 -->|Kann Videos von allen Seiten anschauen| C
+    User1[Nutzer] -->|Instanz beitreten| A
+    User1 -->|Kann auch Videos von anderen Instanzen anschauen| B
+    User1 -->|Kann auch Videos von anderen Instanzen anschauen| C
     
     style A fill:#9ED8DB,stroke:#2980B9,color:#333333
     style B fill:#FEEE7D,stroke:#F39C12,color:#333333
@@ -109,7 +110,7 @@ layout: default-2
 
 ```mermaid
 flowchart LR
-    subgraph "Traditionelle Videoplattformen"
+    subgraph "Andere Videoplattformen"
         S1[Video Server] -->|Sendet Video| V1[Zuschauer 1]
         S1 -->|Sendet Video| V2[Zuschauer 2]
         S1 -->|Sendet Video| V3[Zuschauer 3]
@@ -239,8 +240,8 @@ transition: slide-up
 layout: default-5
 ---
 # Klingt cool, wo kann ich starten?
-- Videos benötigen viel Speicherplatz, deshalb schwer Instanz zu finden die Registrierung zulässt.
-- Die geschlossene Registrierung schützt die Platformbetreiber
+- Videos benötigen viel Speicherplatz, deshalb schwer Instanz zu finden die Registrierung zulässt
+- Die geschlossene Registrierung schützt die Plattformanbieter
 - Zum Anschauen von Videos benötigt man kein Konto
 <QualleFrage class="absolute right-5% bottom-5%"/>
 
@@ -261,7 +262,7 @@ url: https://joinpeertube.org/instances
 transition: slide-up
 layout: section
 ---
-# Kann ich vielleicht meine 
+# Kann ich meine 
 # eigene Instanz installieren?
 <img width="15%" class="absolute top-5% right-5%" src="/images/QualleComputer.png">
 ---
@@ -269,8 +270,19 @@ transition: slide-up
 layout: iframe
 url: https://docs.joinpeertube.org/install/any-os
 ---
+---
 layout: iframe
 url: https://docs.joinpeertube.org/install/docker
+---
+---
+layout: section-2
+---
+# Habt ihr
+# noch Fragen?
+<Transform :scale="1.2">
+<QualleFrage class="absolute right-10% bottom-10%"/>
+</Transform>
+
 ---
 layout: quote
 ---
@@ -281,14 +293,6 @@ layout: quote
 <br/>
 
 # eure Aufmerksamkeit
----
-layout: section-2
----
-# Habt ihr
-# noch Fragen?
-<Transform :scale="1.2">
-<QualleFrage class="absolute right-10% bottom-10%"/>
-</Transform>
 ---
 layout: default-6
 ---
