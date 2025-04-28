@@ -19,12 +19,13 @@ layout: cover
 ---
 transition: slide-left
 zoom: 1.5
+layout: default-4
 ---
 # Was ist Peertube?
 - Open Source Videoplattform
 - Activitypub-Föderation aka *Fediverse*
 - P2P-Übertragungen via WebRTC
-<QualleMitVideo class="absolute right-5% bottom-5%" width="30%" />
+<QualleMitVideo class="absolute right-5% bottom-5%" width="20%" />
 
 <!-- 
 P2P = Peer-to-Peer
@@ -33,6 +34,7 @@ Activitypub = Protokol mit dem z.Bsp. Mastodon und Pixelfed miteinander reden
 ---
 transition: slide-left
 zoom: 1.5
+layout: default-2
 ---
 # Warum sollte ich Peertube benutzen?
 - Datenschutz
@@ -56,13 +58,14 @@ url: https://joinpeertube.org/browse-content
 ---
 ---
 transition: slide-left
-layout: section
+layout: section-3
 ---
 # Wie benutze ich Peertube denn?
 <QualleFrage class="absolute right-5% top-5%"/>
 <!-- Live-Demo -->
 ---
 transition: slide-up
+layout: default-5
 ---
 # Klingt cool, wo kann ich starten?
 - Videos benötigen viel Speicherplatz, deshalb schwer Instanz zu finden die Registrierung zulässt.
@@ -87,7 +90,8 @@ url: https://joinpeertube.org/instances
 transition: slide-up
 layout: section
 ---
-# Kann ich vielleicht meine eigene Instanz installieren?
+# Kann ich vielleicht meine 
+# eigene Instanz installieren?
 <img width="15%" class="absolute top-5% right-5%" src="/images/QualleComputer.png">
 ---
 transition: slide-up
@@ -109,7 +113,14 @@ layout: quote
 
 # eure Aufmerksamkeit
 ---
---- 
+layout: section-2
+---
+# Habt ihr
+# noch Fragen?
+<QualleFrage class="absolute right-5% bottom-5%"/>
+---
+layout: default-6
+---
 # Quellen
 - https://joinpeertube.org/
 - https://www.davidrevoy.com/data/images/blog/2023/2023_peertube-generator.jpg
