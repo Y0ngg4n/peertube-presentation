@@ -60,10 +60,10 @@ graph TD
     User1 -->|Kann Videos von allen Seiten anschauen| B
     User1 -->|Kann Videos von allen Seiten anschauen| C
     
-    style A fill:#ffe6e6
-    style B fill:#e6ffe6
-    style C fill:#e6e6ff
-    style User1 fill:#f9f9f9
+    style A fill:#9ED8DB,stroke:#2980B9,color:#333333
+    style B fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style C fill:#FF9E9D,stroke:#E74C3C,color:#333333
+    style User1 fill:#FFC36B,stroke:#E67E22,color:#333333
 ```
 ---
 layout: right
@@ -78,10 +78,11 @@ flowchart LR
         S1 -->|Sendet Video| V3[Zuschauer 3]
     end
     
-    style S1 fill:#ffcccc
-    style V1 fill:#f9f9f9
-    style V2 fill:#f9f9f9
-    style V3 fill:#f9f9f9
+    style S1 fill:#FF9E9D,stroke:#E74C3C,color:#333333
+    style V1 fill:#FFC36B,stroke:#E67E22,color:#333333
+    style V2 fill:#FFC36B,stroke:#E67E22,color:#333333
+    style V3 fill:#FFC36B,stroke:#E67E22,color:#333333
+
 ```
 ```mermaid
 flowchart LR
@@ -92,11 +93,10 @@ flowchart LR
         PV1 -->|Hilft das Video zu senden| PV3[Zuschauer 3]
         PV2 -->|Hilft das Video zu senden| PV3
     end
-    
-    style PS fill:#ccffcc
-    style PV1 fill:#f9f9f9
-    style PV2 fill:#f9f9f9
-    style PV3 fill:#f9f9f9
+    style PS fill:#9ED8DB,stroke:#2980B9,color:#333333
+    style PV1 fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style PV2 fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style PV3 fill:#FEEE7D,stroke:#F39C12,color:#333333
 ```
 </div>
 ---
@@ -123,16 +123,17 @@ flowchart TD
     C --- I
     C --- J
     
-    style A fill:#e6f7ff
-    style B fill:#ffe6e6
-    style C fill:#e6ffe6
-    style D fill:#e6ffe6
-    style E fill:#e6ffe6
-    style F fill:#e6f7ff
-    style G fill:#f9f9f9
-    style H fill:#f9f9f9
-    style I fill:#f9f9f9
-    style J fill:#f9f9f9
+  
+    style A fill:#9ED8DB,stroke:#2980B9,color:#333333
+    style B fill:#FF9E9D,stroke:#E74C3C,color:#333333
+    style C fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style D fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style E fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style F fill:#9ED8DB,stroke:#2980B9,color:#333333
+    style G fill:#FFC36B,stroke:#E67E22,color:#333333
+    style H fill:#FFC36B,stroke:#E67E22,color:#333333
+    style I fill:#FFC36B,stroke:#E67E22,color:#333333
+    style J fill:#FFC36B,stroke:#E67E22,color:#333333
 ```
 ---
 layout: section
@@ -165,14 +166,14 @@ flowchart TD
     D -->|Globale Ergebnisse| B
     B -->|Kombinierte Suchergebnisse| A
     
-    style A fill:#f9f9f9
-    style B fill:#e6f7ff
-    style C fill:#e6ffe6
-    style D fill:#ffe6e6
-    style E fill:#f5f5f5
-    style F fill:#f5f5f5
-    style G fill:#f5f5f5
-    style H fill:#f5f5f5
+    style A fill:#FFC36B,stroke:#E67E22,color:#333333
+    style B fill:#9ED8DB,stroke:#2980B9,color:#333333
+    style C fill:#FEEE7D,stroke:#F39C12,color:#333333
+    style D fill:#FF9E9D,stroke:#E74C3C,color:#333333
+    style E fill:#DDDDDD,stroke:#7F8C8D,color:#333333
+    style F fill:#DDDDDD,stroke:#7F8C8D,color:#333333
+    style G fill:#DDDDDD,stroke:#7F8C8D,color:#333333
+    style H fill:#DDDDDD,stroke:#7F8C8D,color:#333333
 ```
 ---
 transition: slide-left
