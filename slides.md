@@ -299,3 +299,7 @@ layout: default-6
 # Quellen
 - https://joinpeertube.org/
 - https://www.davidrevoy.com/data/images/blog/2023/2023_peertube-generator.jpg
+<br/>
+<br/>
+# Link zur Präsentation
+- https://peertube-presentation.obco.pro
