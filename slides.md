@@ -56,7 +56,7 @@ graph TD
     A <-->|Teilt Inhalte| C[PeerTube Site C]
     B <-->|Teilt Inhalte| C
     
-    User1[Sie] -->|Seite beitreten| A
+    User1[Nutzer] -->|Seite beitreten| A
     User1 -->|Kann Videos von allen Seiten anschauen| B
     User1 -->|Kann Videos von allen Seiten anschauen| C
     
@@ -100,6 +100,41 @@ flowchart LR
 ```
 </div>
 ---
+zoom: 0.6
+---
+# Peertube unterstützt auch verteilte Systeme
+```mermaid
+flowchart TD
+    A[PeerTube-Instanz] --> B{Benötigt Videoverarbeitung?}
+    B -->|Ja| C[Sendet Auftrag an Remote Runner]
+    C --> D[Remote Runner verarbeitet Video]
+    D --> E[Remote Runner sendet verarbeitetes Video zurück]
+    E --> F[PeerTube aktualisiert Video-Metadaten]
+    
+    subgraph "Remote Runner Aufgaben"
+        G[Transkodierung]
+        H[Videokonvertierung]
+        I[Untertitelerzeugung]
+        J[Video-Optimierung]
+    end
+    
+    C --- G
+    C --- H
+    C --- I
+    C --- J
+    
+    style A fill:#e6f7ff
+    style B fill:#ffe6e6
+    style C fill:#e6ffe6
+    style D fill:#e6ffe6
+    style E fill:#e6ffe6
+    style F fill:#e6f7ff
+    style G fill:#f9f9f9
+    style H fill:#f9f9f9
+    style I fill:#f9f9f9
+    style J fill:#f9f9f9
+```
+---
 layout: section
 transition: slide-up
 ---
@@ -110,6 +145,35 @@ transition: slide-up
 layout: iframe
 url: https://joinpeertube.org/browse-content
 ---
+--- 
+zoom: 1.3
+layout: right
+---
+# Wie funktioniert die Suche?
+```mermaid
+flowchart TD
+    A[Nutzer] -->|Sucht nach Videos| B[PeerTube-Instanz]
+    B -->|Lokale Suchanfrage| C[Lokale Datenbank]
+    B -->|Globale Suchanfrage| D[SepiaSearch]
+    
+    D -->|Indiziert Videos von| E[PeerTube-Instanz 1]
+    D -->|Indiziert Videos von| F[PeerTube-Instanz 2]
+    D -->|Indiziert Videos von| G[PeerTube-Instanz 3]
+    D -->|Indiziert Videos von| H[... viele weitere Instanzen]
+    
+    C -->|Lokale Ergebnisse| B
+    D -->|Globale Ergebnisse| B
+    B -->|Kombinierte Suchergebnisse| A
+    
+    style A fill:#f9f9f9
+    style B fill:#e6f7ff
+    style C fill:#e6ffe6
+    style D fill:#ffe6e6
+    style E fill:#f5f5f5
+    style F fill:#f5f5f5
+    style G fill:#f5f5f5
+    style H fill:#f5f5f5
+```
 ---
 transition: slide-left
 layout: section-3
