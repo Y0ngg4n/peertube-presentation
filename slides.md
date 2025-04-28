@@ -17,6 +17,7 @@ layout: cover
 
 <img width="30%" class="mx-auto" src="/images/fresh-news-mobile.webp"/>
 ---
+transition: slide-left
 zoom: 1.5
 ---
 # Was ist Peertube?
@@ -30,6 +31,7 @@ P2P = Peer-to-Peer
 Activitypub = Protokol mit dem z.Bsp. Mastodon und Pixelfed miteinander reden
 -->
 ---
+transition: slide-left
 zoom: 1.5
 ---
 # Warum sollte ich Peertube benutzen?
@@ -43,24 +45,30 @@ Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
 -->
 ---
 layout: section
+transition: slide-up
 ---
 # Hilfreiches Tool: Instanzübergreifende Suche
 [Suche: https://joinpeertube.org/browse-content](https://joinpeertube.org/browse-content)
+<QualleSearch class="absolute right-5% top-5%" width="20%" />
 ---
 layout: iframe
 url: https://joinpeertube.org/browse-content
 ---
 ---
+transition: slide-left
 layout: section
 ---
 # Wie benutze ich Peertube denn?
+<QualleFrage class="absolute right-5% top-5%"/>
 <!-- Live-Demo -->
 ---
+transition: slide-up
 ---
 # Klingt cool, wo kann ich starten?
 - Videos benötigen viel Speicherplatz, deshalb schwer Instanz zu finden die Registrierung zulässt.
 - Die geschlossene Registrierung schützt die Platformbetreiber
 - Zum Anschauen von Videos benötigt man kein Konto
+<QualleFrage class="absolute right-5% bottom-5%"/>
 
 ## Instanzen mit offener Registrierung
 - [Peertube Instanz-Liste unter https://joinpeertube.org/instances](https://joinpeertube.org/instances)
@@ -71,14 +79,18 @@ layout: section
 Auf der Digitalcourage-Instanz ist die Registrierung auch nicht offen und wir werden sie auch zum aktuellen Zeitpunkt nicht öffnen
 -->
 ---
+transition: slide-left
 layout: iframe
 url: https://joinpeertube.org/instances
 ---
 ---
+transition: slide-up
 layout: section
 ---
 # Kann ich vielleicht meine eigene Instanz installieren?
+<img width="15%" class="absolute top-5% right-5%" src="/images/QualleComputer.png">
 ---
+transition: slide-up
 layout: iframe
 url: https://docs.joinpeertube.org/install/any-os
 ---
@@ -86,4 +98,18 @@ url: https://docs.joinpeertube.org/install/any-os
 layout: iframe
 url: https://docs.joinpeertube.org/install/docker
 ---
+---
+layout: quote
+---
+<img width="20%" class="absolute right-3% top-3%" src="/images/fresh-news-mobile.webp"/>
 
+# Danke für
+<br/>
+<br/>
+
+# eure Aufmerksamkeit
+---
+--- 
+# Quellen
+- https://joinpeertube.org/
+- https://www.davidrevoy.com/data/images/blog/2023/2023_peertube-generator.jpg
