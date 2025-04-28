@@ -49,7 +49,7 @@ layout: default-3
 - Freie Software unterstützen
 - [Plugins](https://joinpeertube.org/plugins-selection) und Themes
 - Keine Werbung
-- Kein Alghoritmus
+- Kein Algorithmus
 
 </Transform>
 <Qualle class="pt-20 absolute right-4% bottom-12%"/>
