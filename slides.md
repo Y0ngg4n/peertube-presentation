@@ -46,6 +46,60 @@ layout: default-2
 Datenschutz: Youtube und Co. benutzen Tracking und Algorithmen für Vorschläge
 -->
 ---
+zoom: 0.9
+layout: default-3
+---
+# Wie Funktioniert Peertube denn?
+```mermaid
+graph TD
+    A[PeerTube Site A] <-->|Teilt Inhalte| B[PeerTube Site B]
+    A <-->|Teilt Inhalte| C[PeerTube Site C]
+    B <-->|Teilt Inhalte| C
+    
+    User1[Sie] -->|Seite beitreten| A
+    User1 -->|Kann Videos von allen Seiten anschauen| B
+    User1 -->|Kann Videos von allen Seiten anschauen| C
+    
+    style A fill:#ffe6e6
+    style B fill:#e6ffe6
+    style C fill:#e6e6ff
+    style User1 fill:#f9f9f9
+```
+---
+layout: right
+---
+# Wie spart Peertube Bandbreite und verhindert Überlastung?
+<div class="grid grid-cols-2 gap-4">
+```mermaid
+flowchart LR
+    subgraph "Traditionelle Videoplattformen"
+        S1[Video Server] -->|Sendet Video| V1[Zuschauer 1]
+        S1 -->|Sendet Video| V2[Zuschauer 2]
+        S1 -->|Sendet Video| V3[Zuschauer 3]
+    end
+    
+    style S1 fill:#ffcccc
+    style V1 fill:#f9f9f9
+    style V2 fill:#f9f9f9
+    style V3 fill:#f9f9f9
+```
+```mermaid
+flowchart LR
+    subgraph "PeerTube's Weg"
+        PS[PeerTube Server] -->|Sendet Video| PV1[Zuschauer 1]
+        PS -->|Sendet Video| PV2[Zuschauer 2]
+        PV1 -->|Hilft das Video zu senden| PV2
+        PV1 -->|Hilft das Video zu senden| PV3[Zuschauer 3]
+        PV2 -->|Hilft das Video zu senden| PV3
+    end
+    
+    style PS fill:#ccffcc
+    style PV1 fill:#f9f9f9
+    style PV2 fill:#f9f9f9
+    style PV3 fill:#f9f9f9
+```
+</div>
+---
 layout: section
 transition: slide-up
 ---
