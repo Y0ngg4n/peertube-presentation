@@ -24,11 +24,13 @@ layout: default-4
 <Transform scale="1.5">
 
 # Was ist Peertube?
+<v-clicks>
 
 - Open Source Videoplattform
 - Dezentralisiert
 - Activitypub-Föderation aka *Fediverse*
 -  P2P-Übertragungen via WebRTC
+</v-clicks>
 </Transform>
 <QualleMitVideo class="absolute right-5% bottom-5%" width="20%" />
 <!-- 
@@ -44,18 +46,15 @@ layout: default-3
 
 # Warum sollte ich Peertube benutzen?
 
-<v-click>
+<v-clicks>
 
 - Datenschutz
 - Fediverse
 - Freie Software unterstützen
-</v-click>
-<v-click>
-
 - [Plugins](https://joinpeertube.org/plugins-selection) und Themes
 - Keine Werbung
 - Kein Algorithmus
-</v-click>
+</v-clicks>
 </Transform>
 <Qualle class="pt-20 absolute right-4% bottom-12%"/>
 <!--
@@ -69,19 +68,16 @@ layout: default-3
 
 # Warum sollte ich Peertube benutzen?
 
-<v-click>
+<v-clicks>
 
 - Videobearbeitungsmöglichkeiten
   - Video mit Start und Ende schneiden
   - Intro und Outro hinzufügen
   - Wasserzeichen/Logo einfügen
-</v-click>
-<v-click>
-
 - Livestreams
 - Externe Videos auf die eigene Instanz synchronisieren
 - Download-Knopf
-</v-click>
+</v-clicks>
 </Transform>
 
 <Qualle class="pt-20 absolute right-4% bottom-12%"/>
@@ -249,21 +245,25 @@ transition: slide-up
 layout: default-5
 ---
 # Klingt cool, wo kann ich starten?
-<v-click>
+<v-clicks>
 
 - Videos benötigen viel Speicherplatz, deshalb schwer Instanz zu finden die Registrierung zulässt
 - Die geschlossene Registrierung schützt die Plattformanbieter
 - Zum Anschauen von Videos benötigt man kein Konto
-<QualleFrage class="absolute right-5% bottom-5%"/>
-</v-click>
+</v-clicks>
+
 <v-click>
 
 ## Instanzen mit offener Registrierung
+
+
 - [Peertube Instanz-Liste unter https://joinpeertube.org/instances](https://joinpeertube.org/instances)
 - [Adminforge: clip.place](https://clip.place/)
 - [edutainment content: tilvids.com](https://tilvids.com/)
 - [Musik: v.basspistol.org](https://v.basspistol.org)
 </v-click>
+
+<QualleFrage class="absolute right-5% bottom-5%"/>
 <!-- 
 Auf der Digitalcourage-Instanz ist die Registrierung auch nicht offen und wir werden sie auch zum aktuellen Zeitpunkt nicht öffnen
 -->
@@ -291,25 +291,19 @@ url: https://docs.joinpeertube.org/install/docker
 ---
 layout: default-4
 ---
+<Transform scale="1.3">
+
 # S3 und Remote Storage
 
-<Transform scale="1.3">
-<v-click>
+<v-clicks>
 
 - Peertube unterstütz nur S3 mit `Virtual Hosting of Buckets`
   - ✅ S3 Bucket unter <br>`peertube-bucket-name.anbieter.com` erreichbar
   - ❌ S3 Bucket unter <br>`anbieter.com/peertube-bucket-name` erreichbar
   - Aktuell unterstützen das leider die wenigsten
-</v-click>
-
-<v-click>
-
 - Einbinden per `s3fs` nicht empfohlen
-</v-click>
-<v-click>
-
 - Bei Netcup, empfielt sich `Local Block Storage` <br>(aktuell 12,99€ pro TB)
-</v-click>
+</v-clicks>
 
 </Transform>
 
