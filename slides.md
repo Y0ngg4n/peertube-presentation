@@ -62,8 +62,7 @@ layout: default-3
 ---
 <Transform scale="1.4">
 
-# Warum sollte ich 
-# Peertube benutzen?
+# Warum sollte ich Peertube benutzen?
 
 - Videobearbeitungsmöglichkeiten
   - Video mit Start und Ende schneiden
@@ -275,6 +274,22 @@ layout: iframe
 url: https://docs.joinpeertube.org/install/docker
 ---
 ---
+layout: default-4
+---
+# S3 und Remote Storage
+
+<Transform scale="1.3">
+
+- Peertube unterstütz nur S3 mit `Virtual Hosting of Buckets`
+  - ✅ S3 Bucket unter <br>`peertube-bucket-name.anbieter.com` erreichbar
+  - ❌ S3 Bucket unter <br>`anbieter.com/peertube-bucket-name` erreichbar
+  - Aktuell unterstützen das leider die wenigsten
+- Einbinden per `s3fs` nicht empfohlen
+- Bei Netcup, empfielt sich `Local Block Storage` <br>(aktuell 12,99€ pro TB)
+
+</Transform>
+
+---
 layout: section-2
 ---
 # Habt ihr
@@ -303,3 +318,9 @@ layout: default-6
 <br/>
 # Link zur Präsentation
 - https://peertube-presentation.obco.pro
+<br/>
+<br/>
+# Kontakt
+- [mail@digitalcourage.de](mailto:mail@digitalcourage.de)
+- Digitalcourage AG Fediverse
+- Digitalcourage AG Digitale Selbsverteidigung
